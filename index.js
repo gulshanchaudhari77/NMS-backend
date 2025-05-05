@@ -80,7 +80,7 @@ const app = express();
 const server = http.createServer(app);
 
 // Middleware
-app.use(cors({ origin: "http://localhost:3001", methods: ["GET", "POST"] })); // Allow requests from React
+app.use(cors({ origin: "https://nms-f.vercel.app", methods: ["GET", "POST"] })); // Allow requests from React
 app.use(express.json());
 
 // Initialize Socket.IO with CORS support
