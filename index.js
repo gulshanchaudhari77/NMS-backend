@@ -86,10 +86,11 @@ app.use(express.json());
 // Initialize Socket.IO with CORS support
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3001", // React frontend URL
+    origin: "https://nms-f.vercel.app", // ✅ Updated to deployed frontend
     methods: ["GET", "POST"],
   },
 });
+
 
 // Routes
 app.use("/api/alert", alertRoutes);
