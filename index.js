@@ -88,6 +88,8 @@ const io = new Server(server, {
   cors: {
     origin: "https://nms-f.vercel.app", // ✅ Updated to deployed frontend
     methods: ["GET", "POST"],
+    credentials: true,  // Add this line to enable credentials
+
   },
 });
 
